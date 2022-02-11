@@ -5,6 +5,9 @@
 # %% imports
 from sympy import *
 
+# %% setup
+init_printing()
+
 # %% symbol creation
 x = symbols('x')
 
@@ -18,4 +21,4 @@ I=Integral(f, x)
 F=I.doit()
 
 # %% display
-print(F)
+pprint(F)
